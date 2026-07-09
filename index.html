@@ -885,21 +885,21 @@ html[data-theme="dark"] footer{background:#070c17;}
       <p>Tell us about your business and we'll get back to you within one business day.</p>
     </div>
     <div class="contact-grid">
-      <form class="contact-form reveal" onsubmit="event.preventDefault(); alert('Thanks! This is a demo form — connect it to your email or CRM to start receiving messages.');">
+      <form class="contact-form reveal" action="https://formspree.io/f/mvzjjooy" method="POST">
         <div class="form-row">
-          <div class="field"><label for="name">Name</label><input id="name" type="text" placeholder="Your full name" required></div>
-          <div class="field"><label for="business">Business Name</label><input id="business" type="text" placeholder="Your business name"></div>
+          <div class="field"><label for="fn-name">Name</label><input id="fn-name" type="text" name="name" placeholder="Your full name" required></div>
+          <div class="field"><label for="fn-business">Business Name</label><input id="fn-business" type="text" name="business" placeholder="Your business name"></div>
         </div>
         <div class="form-row">
-          <div class="field"><label for="email">Email</label><input id="email" type="email" placeholder="you@business.com" required></div>
-          <div class="field"><label for="phone">Phone Number</label><input id="phone" type="tel" placeholder="+256 7XX XXX XXX"></div>
+          <div class="field"><label for="fn-email">Email</label><input id="fn-email" type="email" name="email" placeholder="Your email" required></div>
+          <div class="field"><label for="fn-phone">Phone Number</label><input id="fn-phone" type="tel" name="phone" placeholder="+256 7XX XXX XXX"></div>
         </div>
-        <div class="field"><label for="message">Message</label><textarea id="message" placeholder="Tell us what you'd like to automate..."></textarea></div>
+        <div class="field"><label for="fn-message">Message</label><textarea id="fn-message" name="message" placeholder="Your message"></textarea></div>
         <div class="form-actions">
-          <button type="submit" class="btn btn-primary">Send Message</button>
-          <a href="#contact" class="btn btn-ghost">Book Consultation</a>
+          <button type="submit" class="btn btn-primary">Send</button>
         </div>
       </form>
+
       <div class="contact-info reveal">
         <div class="info-card">
           <div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6h18v12H3z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 7l9 6 9-6" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
